@@ -6,7 +6,7 @@
 
 SmartEvent is a backend API for an event discovery and ticket booking system developed using FastAPI.
 
-The application provides secure user authentication, event management, ticket booking, QR-code ticket generation, notifications, event reminders, and admin management.
+Application provides APIs for user authentication, event discovery, ticket booking, QR-code ticket generation, notifications, event reminders, event management, and administrator analytics.
 
 # Project Overview
 
@@ -24,6 +24,19 @@ The system allows users to:
 * View their tickets
 * Receive booking confirmation notifications
 * Receive upcoming event reminders
+
+The system also provides Admin functionality to:
+
+* Manage events
+* Update event information and status
+* View all registered users
+* View all events and bookings
+* Track total tickets sold and bookings
+* View platform revenue summaries
+* Monitor daily ticket sales
+* Analyze monthly booking trends
+* Identify the most popular events
+* Identify top revenue-generating events
 
 The system also provides Admin functionality for managing events and viewing system statistics.
 
@@ -142,18 +155,71 @@ The project implements:
 
 # Modules Completed
 
-1. ✅ Authentication & JWT
-2. ✅ Event Discovery
-3. ✅ Ticket Booking
-4. ✅ QR Code Ticket System
-5. ✅ Event Reminder Notifications
-6. ✅ Admin Authorization
-7. ✅ Admin Event Management
-8. ✅ Admin Dashboard
-9. ✅ Booking Statistics
-10. ✅ Ticket Statistics
-11. ✅ Revenue Statistics
-12. ✅ Admin User Management
-13. ✅ Admin Booking Management
-14. ✅ Admin Event Management  
+## Module 1: User Authentication & JWT
+* User registration and login
+* Password hashing
+* JWT access token generation and validation
+* Protected API endpoints
+* User profile access
 
+## Module 2: Event Discovery
+* Retrieve available events
+* Search events by title
+* Filter events by category
+* View event information
+
+## Module 3: Ticket Booking
+* Create ticket bookings
+* Calculate total booking price
+* Track booking status
+* Retrieve booking information
+
+## Module 4: QR Code Ticket System
+* Generate QR codes for tickets
+* Associate tickets with bookings
+* Retrieve ticket information
+
+## Module 5: Event Reminder Notifications
+* Booking confirmation notifications
+* Upcoming event reminders
+* Retrieve user-specific notifications
+
+## Module 6: Admin Authorization
+* Role-based access control (RBAC)
+* Protect administrator-only endpoints
+* Restrict operations according to user roles
+
+## Module 7: Admin Event Management
+* Create events
+* Update event information
+* Manage event operations
+* Apply role-based authorization
+
+#Module 8: Admin Dashboard
+* Provide administrative API endpoints
+* Retrieve platform information
+* Support administrative monitoring
+
+## Module 9: Booking Statistics
+* Retrieve booking statistics
+* Track booking status
+* Calculate booking totals
+
+## Module 10: Event Status & Updates
+* Update event information
+* Manage event status
+* Protect event update operations using role-based authorization
+
+## Module 11: Admin Dashboard & Platform Analytics
+* Total registered users
+* Total events created
+* Total tickets sold
+* Total bookings
+* Platform revenue summary
+* Daily ticket sales
+* Monthly booking trends
+* Most popular events
+* Top revenue-generating events
+* View all users
+* View all events
+* View all bookings
