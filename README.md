@@ -71,6 +71,9 @@ Smart_Event/ <br>
 │ │ │ ├── ticket.py <br>
 │ │ │ ├── notification.py <br>
 │ │ │ └── admin.py <br>
+│ │ │ └── user.py <br>
+│ │ │ └── analytics.py <br>
+│ │ │ └── admin_analytics.py <br>
 │<br>
 │ │ ├── schemas/ <br>
 │ │ │ ├── user.py <br>
@@ -78,16 +81,19 @@ Smart_Event/ <br>
 │ │ │ ├── booking.py <br>
 │ │ │ ├── ticket.py <br>
 │ │ │ └── notification.py <br>
+│ │ │ └── analytics.py <br>
 │<br>
 │ │ ├── utils/ <br>
 │ │ │ ├── security.py <br>
 │ │ │ ├── ticket.py <br>
 │ │ │ ├── qr_code.py <br>
 │ │ │ └── notification.py <br>
+│ │ │ └── event_status.py <br>
 │<br>
-│ ├── config.py  <br>
-│ ├── database.py <br>
-│ │── main.py  <br>
+│ | ├── config.py  <br>
+│ | ├── database.py <br>
+│ | │── main.py  <br>
+|<br>
 | ├── .env <br>
 | ├── .gitignore <br>
 │ ├── requirements.txt  <br>
