@@ -105,13 +105,13 @@ Smart_Event/ <br>
 |<br>
 | ├── .env <br>
 | ├── .gitignore <br>
-│ ├── requirements.txt  <br>
-│ ├── migrate.py.txt  <br>
-│ ├── check_notfy.py.txt  <br>
-| ├── smartevent.db  <br>
-| ├── smarteventBackup.db  <br>
-│ └── README.md   <br>
-│  <br>
+│ ├── requirements.txt <br>
+│ ├── migrate.py.txt <br>
+│ ├── check_notfy.py.txt <br>
+| ├── smartevent.db <br>
+| ├── smarteventBackup.db <br>
+│ └── README.md <br>
+│<br>
 └── ... 
 
 # Installation
