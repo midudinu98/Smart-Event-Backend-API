@@ -241,3 +241,31 @@ The project implements:
 * View all users
 * View all events
 * View all bookings
+
+## Module 12: Event Payment System
+* Simulate event ticket payments
+* Create payment records for bookings
+* Track payment status
+* Store transaction IDs and payment amounts
+* Update booking status after successful payment
+
+## Module 13: Coupon & Discount System
+* Apply coupon codes to bookings
+* Validate coupon eligibility
+* Calculate discounts
+* Apply discounted booking prices
+
+## Module 14: Event Feedback & Rating System
+* Submit event feedback and ratings
+* Associate feedback with users and events
+* Retrieve event reviews and ratings
+
+## Module 15: Notification System Enhancements
+* Enhance user notification functionality
+* Manage notification records
+* Support booking and event-related notifications
+
+## Module 16: Event Search & Filtering Improvements
+* Improve event search functionality
+* Support event filtering
+* Improve event discovery API capabilities
