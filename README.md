@@ -63,6 +63,9 @@ Smart_Event/ <br>
 │ │ │ ├── booking.py<br>
 │ │ │ ├── tickets.py <br>
 │ │ │ └── notification.py <br>
+│ │ │ └── coupon.py <br>
+│ │ │ └── payment.py <br>
+│ │ │ └── review.py <br>
 │ <br>
 │ │ ├── routers/ <br>
 │ │ │ ├── auth.py <br>
@@ -74,6 +77,9 @@ Smart_Event/ <br>
 │ │ │ └── user.py <br>
 │ │ │ └── analytics.py <br>
 │ │ │ └── admin_analytics.py <br>
+│ │ │ └── coupon.py <br>
+│ │ │ └── payment.py <br>
+│ │ │ └── review.py <br>
 │<br>
 │ │ ├── schemas/ <br>
 │ │ │ ├── user.py <br>
@@ -82,6 +88,9 @@ Smart_Event/ <br>
 │ │ │ ├── ticket.py <br>
 │ │ │ └── notification.py <br>
 │ │ │ └── analytics.py <br>
+│ │ │ └── coupon.py <br>
+│ │ │ └── payment.py <br>
+│ │ │ └── review.py <br>
 │<br>
 │ │ ├── utils/ <br>
 │ │ │ ├── security.py <br>
@@ -97,7 +106,10 @@ Smart_Event/ <br>
 | ├── .env <br>
 | ├── .gitignore <br>
 │ ├── requirements.txt  <br>
+│ ├── migrate.py.txt  <br>
+│ ├── check_notfy.py.txt  <br>
 | ├── smartevent.db  <br>
+| ├── smarteventBackup.db  <br>
 │ └── README.md   <br>
 │  <br>
 └── ... 
