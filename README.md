@@ -4,41 +4,50 @@
 
 # Overview
 
-SmartEvent is a backend API for an event discovery and ticket booking system developed using FastAPI.
+SmartEvent is a backend event discovery and ticket booking system developed using Python and FastAPI. It provides REST APIs for user authentication, event discovery, ticket booking, QR-code ticket generation, payment processing, notifications, event management, and administrator analytics.
 
-Application provides APIs for user authentication, event discovery, ticket booking, QR-code ticket generation, notifications, event reminders, event management, and administrator analytics.
+The system includes 24 modules covering authentication, event management, booking, payments, recommendations, advanced filtering, and an AI chatbot assistant.
 
 # Project Overview
 
-SmartEvent is an event discovery and ticket booking backend application built using FastAPI.
+SmartEvent is a backend API for an event discovery and ticket booking system developed using FastAPI.
 
-The system allows users to:
+**The application allows users to:**
 
-* Register and log in
-* Browse events
-* Search events by title
-* Filter events by category
-* Book tickets  
-* View booking history
-* Generate QR-code tickets
-* View their tickets
-* Receive booking confirmation notifications
-* Receive upcoming event reminders
+* Register and log in securely using JWT authentication
+* Browse and search events by title, category, location, and date
+* Book tickets and view booking history
+* Generate QR-code tickets and verify ticket information
+* Make simulated payments for bookings
+* Apply coupons and discounts
+* Submit event reviews and ratings
+* Manage wishlists and user profiles
+* Receive booking notifications, event reminders, and announcements
+* Get personalized event recommendations
+* Access real-time ticket availability updates
+* Interact with an AI chatbot for event discovery, booking information, and ticket support
 
-The system also provides Admin functionality to:
+**The system also provides Organizer functionality to:**
 
-* Manage events
+* Create and manage events
 * Update event information and status
-* View all registered users
-* View all events and bookings
+* Manage organizer-owned events
+* Publish event announcements
+* Monitor event activity
+
+**The system also provides Admin functionality to:**
+
+* Manage events and oversee registered users
+* View events and bookings across the platform
 * Track total tickets sold and bookings
 * View platform revenue summaries
 * Monitor daily ticket sales
 * Analyze monthly booking trends
 * Identify the most popular events
 * Identify top revenue-generating events
+* Manage platform operations through role-based access control
 
-The system also provides Admin functionality for managing events and viewing system statistics.
+The application uses FastAPI, Python, SQLAlchemy, SQLite, JWT authentication, and Pydantic to provide secure, structured, and scalable backend APIs.
 
 # Technology Stack
 
@@ -58,6 +67,7 @@ Smart_Event/ <br>
 │  <br>
 │ ├── app/ <br>
 │ │ ├── models/ <br>
+│ │ │ ├── __init__.py <br>
 │ │ │ ├── user.py <br>
 │ │ │ ├── events.py <br>
 │ │ │ ├── booking.py<br>
@@ -66,8 +76,12 @@ Smart_Event/ <br>
 │ │ │ └── coupon.py <br>
 │ │ │ └── payment.py <br>
 │ │ │ └── review.py <br>
+│ │ │ ├── event_update.py <br>
+│ │ │ ├── event_view.py <br>
+│ │ │ ├── wishlist.py <br>
 │ <br>
 │ │ ├── routers/ <br>
+│ │ │ ├── __init__.py <br>
 │ │ │ ├── auth.py <br>
 │ │ │ ├── event.py <br>
 │ │ │ ├── booking.py <br>
@@ -80,6 +94,11 @@ Smart_Event/ <br>
 │ │ │ └── coupon.py <br>
 │ │ │ └── payment.py <br>
 │ │ │ └── review.py <br>
+│ │ │ ├── event_update.py <br>
+│ │ │ ├── event_recommendations.py <br>
+│ │ │ ├── wishlist.py <br>
+│ │ │ ├── realtime.py <br>
+│ │ │ ├── charbot.py <br>
 │<br>
 │ │ ├── schemas/ <br>
 │ │ │ ├── user.py <br>
@@ -91,6 +110,9 @@ Smart_Event/ <br>
 │ │ │ └── coupon.py <br>
 │ │ │ └── payment.py <br>
 │ │ │ └── review.py <br>
+│ │ │ ├── wishlist.py <br>
+│ │ │ ├── event_update.py <br>
+│ │ │ ├── charbot.py <br>
 │<br>
 │ │ ├── utils/ <br>
 │ │ │ ├── security.py <br>
@@ -101,6 +123,7 @@ Smart_Event/ <br>
 │<br>
 │ | ├── config.py  <br>
 │ | ├── database.py <br>
+│ | │── chatbot_service.py  <br>
 │ | │── main.py  <br>
 |<br>
 | ├── .env <br>
@@ -269,3 +292,39 @@ The project implements:
 * Improve event search functionality
 * Support event filtering
 * Improve event discovery API capabilities
+
+## Module 18: Real-Time Event Availability
+* Track available event tickets
+* Update ticket availability after bookings
+* Support real-time updates through WebSockets or polling
+
+Module 19: Personalized Event Recommendations
+* Recommend events based on user activity
+* Consider viewed and booked event categories
+* Improve recommendations using location and popularity
+
+## Module 20: Wishlist System
+* Allow users to add events to their wishlists
+* Support removing events from wishlists
+* Retrieve saved events
+
+## Module 21: Live Event Updates & Announcements
+* Allow organizers and administrators to publish announcements
+* Store event-related updates
+* Provide APIs to retrieve event announcements
+
+## Module 22: User Profile Enhancements
+* Implement user profile updates
+* Support optional profile picture uploads
+* Provide booking summaries
+
+## Module 23: Advanced Event Search & Filtering
+* Support filtering by category, price, date, and location
+* Allow multiple filters in a single search
+* Validate invalid filter criteria
+
+## Module 24: AI Chatbot Assistant
+* Implement an API endpoint for chatbot interactions
+* Assist with event discovery and music event queries
+* Provide booking information and ticket-related support
+* Support authenticated user requests
