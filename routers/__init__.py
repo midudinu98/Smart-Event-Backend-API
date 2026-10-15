@@ -1,0 +1,16 @@
+from app.routers.auth import router as auth_router
+from app.routers.user import router as user_router
+from app.routers.events import router as events_router
+from app.routers.booking import router as booking_router
+from app.routers.notification import router as notification_router
+from app.routers.admin import router as admin_router
+from app.routers.analytics import router as analytics_router
+from app.routers.admin_analytics import router as admin_analytics_router
+from app.routers.payment import router as payment_router
+from app.routers.coupon import router as coupon_router
+from app.routers.review import router as review_router
+from app.routers.realtime import router as realtime_router
+from app.routers.event_recommendations import router as ER_router
+from app.routers.wishlist import router as wishlist_router
+from app.routers.event_updates import router as event_updates
+from app.routers.chatbot import router as chatbot
